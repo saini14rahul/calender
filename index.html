@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body onload="RenderDate()">
+
+    <section class="cntr">
+
+        <div class="calender">
+            <div class="month_cntr">
+                <div class="prev" onclick="moveDate('prev')">
+                    <span><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+                </div>
+                <div class="info">
+                    <h2 id="month"></h2>
+                    <p id="date"></p>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                    <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+            </div>
+            <div class="week">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+               
+            </div> 
+        </div>
+
+    </section>
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
